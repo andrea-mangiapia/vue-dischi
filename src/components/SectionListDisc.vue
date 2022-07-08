@@ -1,12 +1,31 @@
 <template>
     <section>
-        Lista Dischi
+        <div class="list-disc">
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+            <SingleCardDisc />
+
+        </div>
+
+        
     </section>
 </template>
 
 <script>
+import SingleCardDisc from './SingleCardDisc.vue'
+
 export default {
-    name: 'SectionListDisc'
+    name: 'SectionListDisc',
+    components: {
+        SingleCardDisc,
+    },
 }
 </script>
 
@@ -14,6 +33,14 @@ export default {
 @import '../assets/style/variables.scss';
 
 section {
-    color: $primary_text;
+
+    .list-disc {
+        width: 80%;
+        padding: 30px 0;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 }
 </style>
