@@ -15,13 +15,13 @@ export default {
 
 header {
     background-color: $brand_primary_color;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
     padding-left: 15px;
 
     img {
-        width: 20px;
+        width: 30px;
     }
 }
 

@@ -1,17 +1,17 @@
 <template>
     <div class="single-card">
         <div class="img-card">
-            <img src="https://picsum.photos/300/300" alt="Titolo Img">
+            <img :src="albumDetails.poster" :alt="albumDetails.title">
         </div>
         <div class="title-card">
             <h2>
-                Titolo
+                {{albumDetails.title}}
             </h2>
             <div class="author-card">
-                Autore
+                {{albumDetails.author}}
             </div>
             <div class="year-card">
-                Anno
+                {{albumDetails.year}}
             </div>
 
         </div>
@@ -20,7 +20,10 @@
 
 <script>
 export default {
-    name: 'SingleCardDisc'
+    name: 'SingleCardDisc',
+    props: {
+        albumDetails: Object
+    }
 }
 </script>
 
